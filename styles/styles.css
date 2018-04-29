@@ -8,7 +8,7 @@ div {
 
 div div {
     background: rgb(125, 218, 64);
-    position: absolute;
+    position: relative;
     margin: 0 auto;
 }
 
@@ -16,7 +16,8 @@ div div {
     /* height: 400px;
     width: 360px; */
     padding: 0;
-    width: 220px;
+    width: 400px;
+    height: 400px;
     margin: 100px auto;
     position: relative;
     /* left: 100px; */
@@ -27,13 +28,13 @@ div div {
     height: 100px;
     width: 220px;
     border-radius: 110px 110px 0 0;
-    /* position: relative; */
-    /* top: 32px; */
+    position: relative;
+    top: 32px;
 }
 
 .r_eye {
     background-color: rgb(255, 255, 255);
-    /* position: absolute; */
+    position: absolute;
     height: 20px;
     width: 20px;
     border-radius: 10px;
@@ -43,7 +44,7 @@ div div {
 
 .l_eye {
     background-color: rgb(255, 255, 255);
-    /* position: absolute; */
+    position: absolute;
     height: 20px;
     width: 20px;
     border-radius: 10px;
@@ -53,35 +54,36 @@ div div {
 }
 
 .r_ant {
-    /* position: absolute; */
+    position: absolute;
     height: 70px;
     width: 6px;
     border-radius: 10px;
     transform: rotate(-30deg);
-    left:25px ;
-    top: -35px;
+    left:60px ;
+    bottom: 70px;
 }
 
 .l_ant {
-    /* position: absolute; */
+    position: absolute;
     height: 70px;
     width: 6px;
     border-radius: 10px;
     transform: rotate(30deg);
-    right:25px ;
-    top: -35px;
+    right:60px ;
+    bottom: 70px;
 }
 .body {
     width: 220px;
     height: 170px;
-    top: 110px;
+    top: 42px;
     border-radius: 0 0 20px 20px;
 
 }
 .l_arm, .r_arm {
+    position: absolute;
     width: 50px;
     height: 160px;
-    top: 110px;
+    /* top: 110px; */
     border-radius: 45px;
 }
 .l_arm{
@@ -91,9 +93,10 @@ div div {
     right: -60px;
 }
 .l_leg,.r_leg{
+    position: absolute;
     width: 50px;
     height: 160px;
-    top: 200px;
+    top: 100px;
     border-radius: 45px;
 }
 .l_leg{
