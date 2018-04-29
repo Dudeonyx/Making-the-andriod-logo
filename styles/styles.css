@@ -8,15 +8,19 @@ div {
 
 div div {
     background: rgb(125, 218, 64);
-    position: relative;
+    position: absolute;
+    margin: 0 auto;
 }
 
 .andriod {
-    height: 400px;
-    width: 360px;
+    /* height: 400px;
+    width: 360px; */
     padding: 0;
+    width: 220px;
     margin: 100px auto;
     position: relative;
+    /* left: 100px; */
+    /* border: ridge; */
 }
 
 .head {
@@ -24,33 +28,77 @@ div div {
     width: 220px;
     border-radius: 110px 110px 0 0;
     /* position: relative; */
-    top:33px;
+    /* top: 32px; */
 }
 
 .r_eye {
-    background-color:rgb(109, 47, 255);
-    position: absolute;
+    background-color: rgb(255, 255, 255);
+    /* position: absolute; */
     height: 20px;
     width: 20px;
     border-radius: 10px;
-    top: 55px;
+    top: 50px;
+    left: 50px;
+}
+
+.l_eye {
+    background-color: rgb(255, 255, 255);
+    /* position: absolute; */
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    top: 50px;
+    right: 50px;
     /* bottom: 210px; */
 }
 
 .r_ant {
-    position: absolute;
+    /* position: absolute; */
     height: 70px;
     width: 6px;
     border-radius: 10px;
     transform: rotate(-30deg);
+    left:25px ;
+    top: -35px;
 }
 
 .l_ant {
-    position: absolute;
+    /* position: absolute; */
     height: 70px;
     width: 6px;
     border-radius: 10px;
     transform: rotate(30deg);
-    bottom: 145px;
-    left: 50px;
+    right:25px ;
+    top: -35px;
+}
+.body {
+    width: 220px;
+    height: 170px;
+    top: 110px;
+    border-radius: 0 0 20px 20px;
+
+}
+.l_arm, .r_arm {
+    width: 50px;
+    height: 160px;
+    top: 110px;
+    border-radius: 45px;
+}
+.l_arm{
+    left: -60px;
+}
+.r_arm{
+    right: -60px;
+}
+.l_leg,.r_leg{
+    width: 50px;
+    height: 160px;
+    top: 200px;
+    border-radius: 45px;
+}
+.l_leg{
+    left: 40px;
+}
+.r_leg{
+    right: 40px;
 }
