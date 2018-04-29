@@ -1,0 +1,38 @@
+title{
+    text-transform: capitalize;
+}
+div {
+    position: relative;
+    margin: 0 auto;
+}
+div div {
+    background: rgb(125, 218, 64);
+}
+.andriod {
+    height: 400px; width: 400px;
+    padding: 0;
+    /* position: absolute; */
+    top: 100px;
+}
+.head{
+    height: 110px; width:210px ;
+    border-radius: 140px 140px 0 0;
+}
+.r_eye{
+    height: 20px; width: 20px;
+    
+}
+.r_ant {
+    height: 70px; width: 6px;
+    border-radius: 10px;
+    transform: rotate(-30deg);
+    bottom: 215px;
+    right: 50px;
+}
+.l_ant {
+    height: 70px; width: 6px;
+    border-radius: 10px;
+    transform: rotate(30deg);
+    bottom: 145px;
+    left: 50px;
+}
