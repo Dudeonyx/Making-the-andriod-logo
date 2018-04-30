@@ -25,13 +25,12 @@ html{
     height: 100%;
     width: 100%;
     z-index: -1;
-    display: inline;
 }
 .third{
     position: absolute;
     height: 10%;
     width: 10%;
-    background-color: lightslategrey;
+    background-color: rgb(28, 119, 209);
     top:0;
     right: 55%;
     z-index: 11;
@@ -77,6 +76,7 @@ html{
     border-radius: 110px 110px 0 0;
     position: relative;
     top: 32px;
+    transition: all 0.8s ease-in;
 }
 
 .r_eye {
@@ -87,10 +87,12 @@ html{
     border-radius: 10px;
     top: 50px;
     left: 50px;
+    transition: all 0.8s ease-in;
 }
 
-.android:hover * .r_eye{
+.android:hover * .r_eye,.android:hover * .l_eye{
     transform: scale(2);
+    transition: all 0.8s ease-in;
 }
 
 .l_eye {
@@ -102,6 +104,7 @@ html{
     top: 50px;
     right: 50px;
     /* bottom: 210px; */
+    transition: all 0.8s ease-in;
 }
 
 .r_ant {
@@ -128,7 +131,8 @@ html{
     height: 170px;
     top: 42px;
     border-radius: 0 0 20px 20px;
-
+    transition: all 0.8s ease-in;
+    
 }
 .l_arm, .r_arm {
     position: absolute;
@@ -136,6 +140,7 @@ html{
     height: 160px;
     /* top: 110px; */
     border-radius: 45px;
+    transition: all 0.8s ease-in;
 }
 .l_arm{
     left: -60px;
@@ -149,6 +154,7 @@ html{
     height: 160px;
     top: 100px;
     border-radius: 45px;
+    transition: all 0.8s ease-in;
 }
 .l_leg{
     left: 40px;
@@ -158,13 +164,17 @@ html{
 }
 .head:hover{
     transform: rotate(-15deg) translate(-10px, -30px);
+    transition: all 0.8s ease-in;
 }
 .r_arm:hover{
     transform: rotate(-30deg) translate( 30px , 0px );
+    transition: all 0.8s ease-in;
 }
 .l_arm:hover{
     transform: rotate(30deg) translate( -30px , 0px );
+    transition: all 0.8s ease-in;
 }
 .android:active{
     transform: translate(0, -100px);
+    transition: all 0.8s ease-in;
 }
