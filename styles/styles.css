@@ -12,7 +12,7 @@ div div {
     margin: 0 auto;
 }
 
-.andriod {
+.android {
     /* height: 400px;
     width: 360px; */
     padding: 0;
@@ -40,6 +40,10 @@ div div {
     border-radius: 10px;
     top: 50px;
     left: 50px;
+}
+
+.android * * .r_eye{
+    transform: scale(2);
 }
 
 .l_eye {
@@ -114,6 +118,6 @@ div div {
 .l_arm:hover{
     transform: rotate(30deg) translate( -30px , 0px );
 }
-.andriod:active{
+.android:active{
     transform: translate(0, -100px);
 }
