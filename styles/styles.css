@@ -4,14 +4,16 @@
 
 * {
     margin: 0;
-    padding: 0;}
+    padding: 0;
 /*    width: 100%;
     height: 100vw;
     /* background-color: white; */
+}
 
 div div div {
     background: rgb(125, 218, 64);
     position: relative;
+    box-shadow: 3px 3px 5px ;
     margin: 0 auto;
 }
 html{
@@ -32,6 +34,15 @@ html{
     width: 10%;
     background-color: rgb(28, 119, 209);
     top:0;
+    right: 55%;
+    z-index: 11;
+}
+.sixth{
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    background-color: rgb(28, 119, 209);
+    top:10%;
     right: 55%;
     z-index: 11;
 }
@@ -110,22 +121,25 @@ html{
 
 .r_ant {
     position: absolute;
-    height: 70px;
+    height: 45px;
     width: 6px;
-    border-radius: 10px;
+    border-radius: 50px 50px 100% 50px;
     transform: rotate(-30deg);
     left:60px ;
-    bottom: 70px;
+    bottom: 91px;
+    box-shadow: 2px -1px 4px  ;
 }
 
 .l_ant {
     position: absolute;
-    height: 70px;
+    height: 45px;
     width: 6px;
     border-radius: 10px;
     transform: rotate(30deg);
     right:60px ;
-    bottom: 70px;
+    bottom: 90px;
+    box-shadow: 2px -3px 4px  ;
+    
 }
 .body {
     width: 220px;
@@ -152,9 +166,9 @@ html{
 .l_leg,.r_leg{
     position: absolute;
     width: 50px;
-    height: 160px;
-    top: 100px;
-    border-radius: 45px;
+    height: 90px;
+    top: 170px;
+    border-radius:0 0 45px 45px;
     transition: all 0.8s ease-in;
 }
 .l_leg{
