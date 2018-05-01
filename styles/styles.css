@@ -5,7 +5,7 @@
 * {
     margin: 0;
     padding: 0;
-/*    width: 100%;
+    /*    width: 100%;
     height: 100vw;
     /* background-color: white; */
 }
@@ -13,49 +13,74 @@
 div div div {
     background: rgb(125, 218, 64);
     position: relative;
-    box-shadow: 3px 3px 5px ;
+    box-shadow: 3px 3px 5px;
     margin: 0 auto;
 }
-html{
+
+html {
     background-color: white;
 }
 
 .second {
     position: absolute;
-    background-color:rgb(176, 207, 36);
-    top:0px;
+    background-color: rgba(255, 255, 255, 0.919);
+    top: 0px;
     height: 100%;
     width: 100%;
     z-index: -1;
 }
-.third{
+
+.third {
     position: absolute;
     height: 10%;
     width: 10%;
     background-color: rgb(28, 119, 209);
-    top:0;
+    top: 0;
     right: 55%;
     z-index: 11;
 }
-.sixth{
+
+.sixth {
     position: absolute;
     height: 10%;
-    width: 10%;
-    background-color: rgb(28, 119, 209);
-    top:10%;
-    right: 55%;
+    width: 30%;
+    background-color: rgba(28, 119, 209, 0);
+    top: 10%;
+    right: 25%;
     z-index: 11;
+    transition: all 1s 0s ease-in;
+    color: transparent;
+    font: italic small-caps 600 2em/1 courier;
+   visibility: hidden;
 }
-.fifth{
+
+.fifth:hover+.sixth {
+    /* height: 10%;
+    width: 30%; */
+    background-color: rgba(28, 119, 209, 0.5);
+    color: initial;
+    visibility: visible;
+}
+
+.sixth:hover {
+    /* height: 10%;
+    width: 30%; */
+    background-color: rgba(28, 119, 209, 0.5);
+    color: initial;
+    visibility: visible;
+}
+
+.fifth {
     position: absolute;
     height: 10%;
     width: 10%;
     background-color: rgb(255, 0, 13);
-    top:0;
+    top: 0;
     right: 45%;
     z-index: 11;
 }
-.fourth{
+
+.fourth {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -63,14 +88,16 @@ html{
     background-color: white;
     z-index: 1;
 }
-.second:target{
+
+.second:target {
     z-index: 10;
 }
+
 .android {
     /* height: 400px;
     width: 360px; */
     /* padding: 100px 0 0 0; */
-    top:150px;
+    top: 150px;
     width: 368px;
     height: 100%;
     margin: 0px auto;
@@ -102,7 +129,8 @@ html{
     transition: all 0.8s ease-in;
 }
 
-.android:hover * .r_eye,.android:hover * .l_eye{
+.android:hover * .r_eye,
+.android:hover * .l_eye {
     transform: scale(2);
     transition: all 0.8s ease-in;
 }
@@ -125,9 +153,9 @@ html{
     width: 6px;
     border-radius: 50px 50px 100% 50px;
     transform: rotate(-30deg);
-    left:60px ;
+    left: 60px;
     bottom: 91px;
-    box-shadow: 2px -1px 4px  ;
+    box-shadow: 2px -1px 4px;
 }
 
 .l_ant {
@@ -136,20 +164,21 @@ html{
     width: 6px;
     border-radius: 10px;
     transform: rotate(30deg);
-    right:60px ;
+    right: 60px;
     bottom: 90px;
-    box-shadow: 2px -3px 4px  ;
-    
+    box-shadow: 2px -3px 4px;
 }
+
 .body {
     width: 220px;
     height: 170px;
     top: 42px;
     border-radius: 0 0 20px 20px;
     transition: all 0.8s ease-in;
-    
 }
-.l_arm, .r_arm {
+
+.l_arm,
+.r_arm {
     position: absolute;
     width: 50px;
     height: 160px;
@@ -157,39 +186,49 @@ html{
     border-radius: 45px;
     transition: all 0.8s ease-in;
 }
-.l_arm{
+
+.l_arm {
     left: -60px;
 }
-.r_arm{
+
+.r_arm {
     right: -60px;
 }
-.l_leg,.r_leg{
+
+.l_leg,
+.r_leg {
     position: absolute;
     width: 50px;
     height: 90px;
     top: 170px;
-    border-radius:0 0 45px 45px;
+    border-radius: 0 0 45px 45px;
     transition: all 0.8s ease-in;
 }
-.l_leg{
+
+.l_leg {
     left: 40px;
 }
-.r_leg{
+
+.r_leg {
     right: 40px;
 }
-.head:hover{
+
+.head:hover {
     transform: rotate(-15deg) translate(-10px, -30px);
     transition: all 0.8s ease-in;
 }
-.r_arm:hover{
-    transform: rotate(-30deg) translate( 30px , 0px );
+
+.r_arm:hover {
+    transform: rotate(-30deg) translate( 30px, 0px);
     transition: all 0.8s ease-in;
 }
-.l_arm:hover{
-    transform: rotate(30deg) translate( -30px , 0px );
+
+.l_arm:hover {
+    transform: rotate(30deg) translate( -30px, 0px);
     transition: all 0.8s ease-in;
 }
-.android:active{
+
+.android:active {
     transform: translate(0, -75px);
     transition: all 0.8s ease-in;
 }
