@@ -97,7 +97,7 @@ html {
     /* height: 400px;
     width: 360px; */
     /* padding: 100px 0 0 0; */
-    top: 150px;
+    top: 125px;
     width: 368px;
     height: 100%;
     margin: 0px auto;
@@ -228,5 +228,5 @@ html {
 }
 
 .android:active {
-    transform: translate(0, -75px);
+    transform: translate(0, -50px);
 }
